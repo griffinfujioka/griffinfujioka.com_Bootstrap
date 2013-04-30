@@ -18,25 +18,11 @@ body {
     height:115px;
 }
 
-.appName {
-    font-size: 16px;
-     font-family: 'MyriadPro-Light', Arial;     
-     font-weight:normal;
-     color: #FFF;  
-     visibility:hidden;
-     position:relative;
-
-     padding:10px;
-    float:right;
-}
-
-.imgWrap:hover .appName {
-    visibility:visible;
-}
 
 .showDescription {
     transform-origin: top;              /* W3C */
     transition-duration: 0.5s;          /* W3C */  
+    transform-origin:left;
     -webkit-transform-origin: top;      /* Google Chrome/Safari Support */
     -webkit-transition-duration: 0.5s;  /* Google Chrome/Safari Support */
      -moz-transform-origin: top;         /* Mozilla Firefox Support */
@@ -60,9 +46,12 @@ body {
 .imgWrap:hover .showDescription {
     background: rgba(160, 0, 0, 0.0);
     color: #000;
-    
-height: 115px;
-width:270px;
+    min-height:115px;
+    max-height:250px;
+    min-width:280px;
+    max-width:400px;
+height: auto;
+width:auto;
 transform: rotateX(0deg);           /* W3C */  
 -webkit-transform: rotateX(0deg);   /* Google Chrome/Safari Support */
 visibility:visible;
@@ -71,10 +60,53 @@ visibility:visible;
 
 
 }
+.imgWrap .span5 {
+    height:10px;
+    max-height:250px;
+    visibility:collapse;
+}
+.imgWrap:hover .span5 {
+    background: rgba(160, 0, 0, 0.0);
+    color: #000;
+transform: rotateX(0deg);           /* W3C */  
+-webkit-transform: rotateX(0deg);   /* Google Chrome/Safari Support */
+visibility:visible;
+    padding:10px;
+    float:right;
+    max-height:300px;
+    height: 300px;
+    min-width:200px;
+    width:400px;
+    max-width:500px;
+    float:right;
+
+}
+
+.imgWrap .popover {
+     background: rgba(0, 0, 0, 1.0);
+    color: #000;
+    padding:10px;
+    float:right;
+    max-height:400px;
+    min-width:300px;
+    width:auto;
+    max-width:720px;
+    visibility:collapse;
+    
+}
+
+.imgWrap:hover .popover {
+    position:relative; 
+    visibility:visible;
+     background: rgba(255, 255, 255, 1.0);
+    color: #000;
+    padding:10px;
+    float:right;
+}
 
 
 .imgWrap img {
-    border: 5px solid #ccc;
+    border-style:none;
     float: left;
     margin: 5px;
     -webkit-transition: margin 0.5s ease-out;
@@ -84,6 +116,13 @@ visibility:visible;
 }
 
     .imgWrap img:hover {
-        margin-top: 2px;
+        margin-bottom: 4px;
         opacity:0.4;
+        -webkit-transition: margin 0.5s ease-out;
     }
+
+
+
+.popover.descriptionPopover {
+    display: block
+}
