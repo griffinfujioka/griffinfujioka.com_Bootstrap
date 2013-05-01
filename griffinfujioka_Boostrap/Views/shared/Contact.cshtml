@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
+}
+
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h2>Contact</h2>
+    </div>
+    <div class="row-fluid">
+        <div class="span3">
+            <table class="table">
+                <tr>
+                    <th style="min-width:160px;">@@griffinfujioka</th>
+                    <th style="min-width:160px;">Github</th>
+                    <th style="min-width:160px;">8tracks</th>
+                    <th>LinkedIn</th>
+                    <th>Tumblr</th>
+                </tr>
+
+                <thead>
+                </thead>
+            </table>
+
+
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span9">
+            <table class="table">
+                <thead>
+                    
+                </thead>
+                <tr>
+                    <td>Name</td>
+                    <td> <input name="nameInput" type="text" class="span4" placeholder="Enter your name">  </td>
+                </tr>
+                <tr>
+                    <td>E-mail Address</td>
+                    <td> <input name="emailAddressInput" type="text" class="span4" placeholder="Enter your e-mail address">  </td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td> <input name="subjectInput" type="text" class="span4" placeholder="Enter a subject">  </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td> <textarea name="nameInput" class="input-xlarge" rows="4" placeholder="Your message"></textarea>  </td>
+                </tr>
+            </table>
+            <div class="form-actions">  
+            <button type="submit" class="btn btn-primary" onclick="sendEmailBtnClick">Submit</button>  
+          </div>  
+        </div>
+    </div>
+
+
+</div>

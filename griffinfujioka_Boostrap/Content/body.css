@@ -88,20 +88,23 @@ visibility:visible;
     padding:10px;
     float:right;
     max-height:400px;
-    min-width:300px;
-    width:auto;
-    max-width:720px;
+    min-width:500px;
+    max-width:1000px;
     visibility:collapse;
     
 }
 
 .imgWrap:hover .popover {
-    position:relative; 
+    transition-delay:.5s;
+    position:absolute; 
     visibility:visible;
-     background: rgba(255, 255, 255, 1.0);
+    background: rgba(255, 255, 255, 1.0);
     color: #000;
     padding:10px;
     float:right;
+    max-height:400px;
+    min-width:500px;
+    max-width:1000px;
 }
 
 
@@ -116,9 +119,11 @@ visibility:visible;
 }
 
     .imgWrap img:hover {
+        -webkit-transition: margin 0.5s ease-out;
         margin-bottom: 4px;
         opacity:0.4;
         -webkit-transition: margin 0.5s ease-out;
+        position:relative;
     }
 
 

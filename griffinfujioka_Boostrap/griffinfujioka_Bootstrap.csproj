@@ -139,6 +139,7 @@
     <Compile Include="NavigationRoutes\NavigationRouteConfigurationExtensions.cs" />
     <Compile Include="NavigationRoutes\NavigationRouteFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ContactController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -151,15 +152,18 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\images\app images\Archive.png" />
+    <Content Include="Content\images\app images\CaffeineCalculator.png" />
     <Content Include="Content\images\app images\ChristmasCountdown.png" />
     <Content Include="Content\images\app images\CougarFootball.png" />
     <Content Include="Content\images\app images\CustomCountdown.png" />
     <Content Include="Content\images\app images\DesignPatterns.png" />
     <Content Include="Content\images\app images\EZBaseConverter.png" />
     <Content Include="Content\images\app images\GraduationCountdown.png" />
+    <Content Include="Content\images\app images\Ideas.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\app images\tweetMaps.png" />
+    <Content Include="Content\images\SF ACM.jpeg" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -205,6 +209,7 @@
     <Content Include="Views\shared\HomePage.cshtml" />
     <Content Include="Views\shared\About.cshtml" />
     <Content Include="Views\shared\Portfolio.cshtml" />
+    <Content Include="Views\shared\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
