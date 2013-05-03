@@ -2,59 +2,74 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
 }
+@using griffinfujioka_Boostrap.Models
+@using (Html.BeginForm("sendEmailBtnClick", "examplelayouts", new EmailMessage(),FormMethod.Get, new Form{@id="contactForm", @name="contactForm"}))
+{
+    
 
-
-
-<div class="container-fluid">
-    <div class="row-fluid">
-        <h2>Contact</h2>
-    </div>
-    <div class="row-fluid">
-        <div class="span3">
-            <table class="table">
-                <tr>
-                    <th style="min-width:160px;">@@griffinfujioka</th>
-                    <th style="min-width:160px;">Github</th>
-                    <th style="min-width:160px;">8tracks</th>
-                    <th>LinkedIn</th>
-                    <th>Tumblr</th>
-                </tr>
-
-                <thead>
-                </thead>
-            </table>
-
-
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <h2>Contact</h2>
         </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span9">
-            <table class="table">
-                <thead>
-                    
-                </thead>
-                <tr>
-                    <td>Name</td>
-                    <td> <input name="nameInput" type="text" class="span4" placeholder="Enter your name">  </td>
-                </tr>
-                <tr>
-                    <td>E-mail Address</td>
-                    <td> <input name="emailAddressInput" type="text" class="span4" placeholder="Enter your e-mail address">  </td>
-                </tr>
-                <tr>
-                    <td>Subject</td>
-                    <td> <input name="subjectInput" type="text" class="span4" placeholder="Enter a subject">  </td>
-                </tr>
-                <tr>
-                    <td>Message</td>
-                    <td> <textarea name="nameInput" class="input-xlarge" rows="4" placeholder="Your message"></textarea>  </td>
-                </tr>
-            </table>
-            <div class="form-actions">  
-            <button type="submit" class="btn btn-primary" onclick="sendEmailBtnClick">Submit</button>  
-          </div>  
+        <div class="row-fluid">
+            <div class="span3">
+                <table class="table">
+                    <tr>
+                        <th style="min-width: 140px;">Github</th>
+                        <th style="min-width: 140px;">8tracks</th>
+                        <th style="min-width: 140px;">LinkedIn</th>
+                        <th style="min-width: 140px;">Tumblr</th>
+                    </tr>
+
+                    <thead>
+                    </thead>
+                </table>
+
+
+            </div>
         </div>
+        <div class="row-fluid">
+            <div class="span9">
+                <table class="table">
+                    <thead>
+                    </thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <input name="Name" id="Name" type="text" class="span4" placeholder="Enter your name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail Address</td>
+                        <td>
+                            <input name="FromEmailAddress" id="FromEmailAddress" type="text" class="span4" placeholder="Enter your e-mail address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td>
+                            <input name="Subject" id="Subject" type="text" class="span4" placeholder="Enter a subject">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td>
+                           <textarea class="span4" name="Message" id="Message" placeholder="Enter a message" form="contactForm"></textarea>
+                           
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                        @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-primary" })
+                  
+
+
+                </div>
+            </div>
+        </div>
+
+
     </div>
-
-
-</div>
+}
