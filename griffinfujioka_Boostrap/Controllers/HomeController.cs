@@ -18,6 +18,28 @@ namespace BootstrapMvcSample.Controllers
             return View(); 
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Portfolio()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult Resume()
+        {
+            return View(); 
+            //Response.Redirect("https://skydrive.live.com/redir?resid=98D6BDF2F20F8BD3!3374&authkey=!AFkkXFDSe21z2tI");
+            //return View("Home");
+        }
+
         public ActionResult Foo()
         {
             return View();
@@ -27,6 +49,9 @@ namespace BootstrapMvcSample.Controllers
         {
             return View(); 
         }
+
+
+
         [HttpPost]
         public ActionResult Create(HomeInputModel model)
         {

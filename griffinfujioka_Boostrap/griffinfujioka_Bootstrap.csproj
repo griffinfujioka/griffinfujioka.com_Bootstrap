@@ -129,6 +129,7 @@
     <Compile Include="Controllers\BootstrapBaseController.cs" />
     <Compile Include="Controllers\ExampleLayoutsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -163,11 +164,18 @@
     <Content Include="Content\images\app images\EZBaseConverter.png" />
     <Content Include="Content\images\app images\GraduationCountdown.png" />
     <Content Include="Content\images\app images\Ideas.png" />
+    <Content Include="Content\images\app images\WishList.png" />
+    <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\app images\tweetMaps.png" />
     <Content Include="Content\images\SF ACM.jpeg" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\aws.pubxml" />
+    <None Include="Properties\PublishProfiles\griffinfujioka - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\griffinfujioka - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\griffinfujioka - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\griffinfujioka - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -191,7 +199,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\shared\_html5shiv.cshtml" />
     <Content Include="Views\shared\Index.cshtml" />
@@ -213,6 +223,7 @@
     <Content Include="Views\shared\About.cshtml" />
     <Content Include="Views\shared\Portfolio.cshtml" />
     <Content Include="Views\shared\Contact.cshtml" />
+    <Content Include="Views\shared\Resume.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
