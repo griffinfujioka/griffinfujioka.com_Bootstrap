@@ -3,6 +3,20 @@
     Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
 }
 @using griffinfujioka_Boostrap.Models
+<script runat="server" type="text/C#">
+    public void sendEmailBtnClick()
+        {
+            MailMessage m = new MailMessage();
+            SmtpClient sc = new SmtpClient();
+            m.From = new MailAddress("from@gmail.com", "Display name");
+            m.To.Add(new MailAddress("to@domain.com", "Display name To"));
+            m.CC.Add(new MailAddress("CC@yahoo.com", "Display name CC"));
+            //similarly BCC
+            m.Subject = "Test";
+            m.Body = "This is a Test Mail";
+        }
+</script>
+
 @using (Html.BeginForm("sendEmailBtnClick", "examplelayouts", new EmailMessage(),FormMethod.Get, new Form{@id="contactForm", @name="contactForm"}))
 {
     
@@ -15,10 +29,11 @@
             <div class="span3">
                 <table class="table">
                     <tr>
-                        <th style="min-width: 140px;"><a style="text-decoration:none;font-size:medium;" href="https://github.com/griffinfujioka">Github</a></th>
+                        <th style="min-width: 140px;"> <a class="icon-github icon-2x" href="http://www.github.com/griffinfujioka" style="text-decoration:none;"></a></th>
+                        
+                        <th style="min-width: 140px;"><a class="icon-linkedin icon-2x" style="text-decoration:none;font-size:medium;" href="http://www.linkedin.com/profile/view?id=63016629&trk=tab_pro"></a></th>
+                        <th style="min-width: 140px;"><a  style="text-decoration:none;font-size:medium;" href="http://griffinfujioka.tumblr.com/">Tumblr</a></th>
                         <th style="min-width: 140px;"><a style="text-decoration:none;font-size:medium;" href="http://8tracks.com/griffinfujioka">8tracks</a></th>
-                        <th style="min-width: 140px;"><a style="text-decoration:none;font-size:medium;" href="http://www.linkedin.com/profile/view?id=63016629&trk=tab_pro">LinkedIn</a></th>
-                        <th style="min-width: 140px;"><a style="text-decoration:none;font-size:medium;" href="http://griffinfujioka.tumblr.com/">Tumblr</a></th>
                     </tr>
 
                     <thead>
@@ -61,7 +76,7 @@
                 </table>
 
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="sendEmailBtnClick();">Submit</button>
                         @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-primary" })
                   
 

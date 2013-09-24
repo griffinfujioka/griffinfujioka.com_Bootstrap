@@ -19,14 +19,14 @@ namespace griffinfujioka_Boostrap.Views
 
         public void sendEmailBtnClick()
         {
-            MailMessage m = new MailMessage();
-            SmtpClient sc = new SmtpClient();
-            m.From = new MailAddress("from@gmail.com", "Display name");
-            m.To.Add(new MailAddress("to@domain.com", "Display name To"));
-            m.CC.Add(new MailAddress("CC@yahoo.com", "Display name CC"));
-            //similarly BCC
-            m.Subject = "Test";
-            m.Body = "This is a Test Mail";
+            //MailMessage m = new MailMessage();
+            //SmtpClient sc = new SmtpClient();
+            //m.From = new MailAddress("from@gmail.com", "Display name");
+            //m.To.Add(new MailAddress("to@domain.com", "Display name To"));
+            //m.CC.Add(new MailAddress("CC@yahoo.com", "Display name CC"));
+            ////similarly BCC
+            //m.Subject = "Test";
+            //m.Body = "This is a Test Mail";
         }
 
     }

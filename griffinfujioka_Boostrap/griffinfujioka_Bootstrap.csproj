@@ -164,8 +164,12 @@
     <Content Include="Content\images\app images\EZBaseConverter.png" />
     <Content Include="Content\images\app images\GraduationCountdown.png" />
     <Content Include="Content\images\app images\Ideas.png" />
+    <Content Include="Content\images\app images\PercentCalculator.png" />
     <Content Include="Content\images\app images\WishList.png" />
     <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\G-HomeButton-Resized.png" />
+    <Content Include="Content\images\G-HomeButton.png" />
+    <Content Include="Content\images\G-HomeButton32.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\app images\tweetMaps.png" />
