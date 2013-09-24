@@ -175,6 +175,7 @@
     <Content Include="Content\images\app images\tweetMaps.png" />
     <Content Include="Content\images\SF ACM.jpeg" />
     <Content Include="Global.asax" />
+    <Content Include="Content\resume.pdf" />
     <None Include="Properties\PublishProfiles\aws.pubxml" />
     <None Include="Properties\PublishProfiles\griffinfujioka - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\griffinfujioka - FTP.pubxml" />
