@@ -2,8 +2,13 @@
     ViewBag.Title = "Resume";
     Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
 }
-<div class="container-fluid">
-    
 
-    <form id="form1" runat="server"> <div style="width:99%;height:99%;border:1px solid green;"> <iframe id="frame1" runat="server" scrolling="auto" frameborder="0" marginheight="0" marginwidth="0" src="~/Content/resume.pdf" style="height:99.5%;width:99.5%;border:1px solid yellow;"></iframe>> </div> </form>
+    @*<form id="form1" runat="server"> <div style="width:99%;height:99%;border:1px solid green;"> <iframe id="frame1" runat="server" scrolling="auto" frameborder="0" marginheight="0" marginwidth="0" src="~/Content/resume.pdf" style="height:100%;width:100%;border:1px solid yellow;"></iframe>> </div> </form>*@
+    @*<embed src="~/Content/resume.pdf" width="800" height="900" type='application/pdf'>*@
+
+<div id="pdf" >
+  <object width="800" height="1000" type="application/pdf" data="~/Content/resume.pdf" id="pdf_content" align="center">
+    <p>Insert your error message here, if the PDF cannot be displayed.</p>
+  </object>
 </div>
+
