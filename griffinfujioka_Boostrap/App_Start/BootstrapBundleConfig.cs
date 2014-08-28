@@ -27,7 +27,9 @@ namespace BootstrapSupport
             bundles.Add(new StyleBundle("~/content/fontawesome").Include(
                 "~/Content/font-awesome.css",
                 "~/Content/font-awesome.min.css"
-                )); 
+                ));
+
+            bundles.IgnoreList.Clear();
         }
     }
 }
