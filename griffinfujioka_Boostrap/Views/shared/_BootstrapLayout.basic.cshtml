@@ -8,8 +8,7 @@
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="@Styles.Url("~/content/css")" rel="stylesheet"/>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="@Styles.Url("~/content/fontawesome")" rel="stylesheet"/>
     @RenderSection("head", required: false)
     @Html.Partial("_html5shiv")
     @* favicons and touch icons go here *@
@@ -46,7 +45,8 @@
                 <div class="row-fluid" style="margin-top: 20px;">
                         <a href="https://twitter.com/griffinfujioka" class="twitter-follow-button" data-show-count="false">Follow griffinfujioka</a>
                         <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
-                    <a class="icon-github icon-2x" href="http://www.github.com/griffinfujioka" style="text-decoration:none; padding-left:8px;"></a>
+                    <a href="https://www.github.com/griffinfujioka" class="fa fa-github fa-2x"></a>
+                    <a href="https://www.linkedin.com/pub/griffin-fujioka/19/12b/b59" class="fa fa-linkedin-square fa-2x"></a>
                 </div>
             </div>
 

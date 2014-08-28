@@ -23,6 +23,11 @@ namespace BootstrapSupport
                 "~/Content/bootstrap-responsive.css",
                 "~/Content/bootstrap-mvc-validation.css"
                 ));
+
+            bundles.Add(new StyleBundle("~/content/fontawesome").Include(
+                "~/Content/font-awesome.css",
+                "~/Content/font-awesome.min.css"
+                )); 
         }
     }
 }
